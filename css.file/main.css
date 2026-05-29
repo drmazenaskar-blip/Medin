@@ -575,7 +575,7 @@ img {
     transition: all 0.3s;
 }
 
-.faq-item:hover i {
+.faq-item:hover i , .faq-item.active i{
     transform: rotate(180deg);
 }
 
@@ -639,7 +639,7 @@ img {
     transition: max-height 0.4s ease-in-out, opacity 0.3s ease;
 }
 
-.faq-item:hover .faq-answer {
+.faq-item:hover .faq-answer , .faq-item.active .faq-answer{
     opacity: 1;
     max-height: 450px;
 }
@@ -670,7 +670,8 @@ img {
     transform: rotate(0deg);
 }
 
-.payment-list li:hover {
+.payment-list li:hover,
+.payment-list li:active {
     background: #eef4ff;
     border-color: #cfdcff;
     transform: translateY(-2px);
