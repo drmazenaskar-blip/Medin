@@ -436,7 +436,7 @@
 
 .faq-item:hover .faq-answer {
     opacity: 1;
-    max-height: 200px;
+    max-height: fit-content;
 }
 
 /* <!-- قسم المقالات والأبحاث --> */
