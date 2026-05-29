@@ -584,7 +584,7 @@ img {
     font-size: var(--fs-body-2);
     font-weight: 400;
     line-height: 1.2;
-     color: blue;
+    color: blue;
     margin-bottom: 1rem;
 }
 
@@ -620,7 +620,7 @@ img {
     font-size: var(--fs-body-2);
     font-weight: 400;
     line-height: 1.2;
-    color: blue;
+    color: #021541;
 }
 
 .faq-item .faq-answer p {
@@ -628,7 +628,7 @@ img {
     font-size: var(--fs-body-2);
     font-weight: 400;
     line-height: 1.2;
-    color: #4A90E2;
+    color: var(--color-dark-blue);
 }
 
 .faq-item .faq-answer {
@@ -641,7 +641,39 @@ img {
 
 .faq-item:hover .faq-answer {
     opacity: 1;
-    max-height: 230px;
+    max-height: 450px;
+}
+
+.payment-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-family: var(--font-body);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.payment-list li {
+    background: #f7f9fc;
+    border: 1px solid #e6eaf0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.payment-list li i {
+    font-size: 15px;
+}
+.faq-item:hover .payment-list li i{
+    transform: rotate(0deg);
+}
+
+.payment-list li:hover {
+    background: #eef4ff;
+    border-color: #cfdcff;
+    transform: translateY(-2px);
 }
 
 /* ================================================================================================= */
