@@ -1,0 +1,302 @@
+/* start Hero section========================================================================= */
+.hero-section {
+    height: 250px;
+    background-image: url(../img/book.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, var(--color-dark-blue) 20%, var(--color-primary) 20% 80%, var(--color-dark-blue) 80%) 1;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.hero-section .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section .container span {
+    font-family: var(--font-body);
+    font-size: var(--fs-body-1);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-dark-neutral);
+}
+
+.hero-section .container span a {
+    color: var(--color-dark-neutral);
+}
+
+.hero-section .container span a:hover {
+    color: blueviolet;
+}
+
+.hero-section .container h1 {
+    font-family: var(--font-display);
+    font-size: var(--fs-display-1);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-dark-blue);
+}
+
+/* =============================================== */
+/* =========================================================================================================== */
+.appointment-section {
+    padding: 80px 0px;
+    background-color: #fafbfe;
+}
+
+.appointment-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* =================form============== */
+.booking-info-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.booking-info-side h1 {
+    font-family: var(--font-display);
+    font-size: var(--fs-display-2);
+    color: var(--color-dark-blue);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.booking-info-side p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-family: var(--font-body);
+}
+
+.custom-form-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark-blue);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.form-grid-row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.field-cell {
+    flex: 1;
+    position: relative;
+}
+
+.form-grid-row .field-cell:first-child:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.custom-form-box input,
+.custom-form-box select,
+.custom-form-box textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 18px 20px;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.custom-form-box input::placeholder,
+.custom-form-box textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Custom Arrow for Select Dropdowns */
+.field-cell.select-type::after {
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+}
+
+.custom-form-box select option {
+    background-color: var(--color-dark-neutral);
+    color: white;
+}
+
+
+.custom-form-box textarea {
+    min-height: 160px;
+    resize: none;
+}
+
+.btn-submit-booking {
+    background-color: #a9c2f5;
+    color: var(--color-dark-neutral);
+    border: none;
+    padding: 20px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.btn-submit-booking:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* ================================== */
+/*  Schedule Sidebar */
+.schedule-sidebar {
+    background-color: var(--color-dark-blue);
+    color: white;
+    padding: 50px 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-body);
+}
+
+.schedule-sidebar h2 {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.timing-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.timing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    font-size: 15px;
+}
+
+.day-name {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.time-line {
+    flex-grow: 1;
+    margin: 0 20px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.hours-val {
+    font-weight: 500;
+}
+
+.divider-line {
+    border: none;
+    border-top: 1px solid var(--border-line);
+    margin-bottom: 30px;
+}
+
+.emergency-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.emergency-icon {
+    font-size: 32px;
+    color: var(--text-light);
+}
+
+.emergency-meta p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2px;
+}
+
+.emergency-meta h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ============================= */
+@media (max-width: 991px) {
+    .appointment-section .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-grid-row {
+        flex-direction: column;
+    }
+
+    .form-grid-row .field-cell:first-child:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .schedule-sidebar {
+        padding: 40px 20px;
+    }
+
+    .schedule-sidebar h2 {
+        font-size: 32px;
+    }
+
+    .time-line {
+        margin: 0 10px;
+    }
+}
+
+/* ================================================================================================== */
+.map-section {
+    padding: 80px 0px;
+}
+
+.map-section .container  iframe {
+    width: 100%;
+    height: 450px;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
