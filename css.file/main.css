@@ -584,7 +584,7 @@ img {
     font-size: var(--fs-body-2);
     font-weight: 400;
     line-height: 1.2;
-    color: #021541;
+     color: blue;
     margin-bottom: 1rem;
 }
 
@@ -593,7 +593,7 @@ img {
     font-size: var(--fs-body-2);
     font-weight: 400;
     line-height: 1.2;
-    color: #45464F;
+    color: #4A90E2;
 }
 
 /* ================================================= */
@@ -620,7 +620,7 @@ img {
     font-size: var(--fs-body-2);
     font-weight: 400;
     line-height: 1.2;
-    color: #021541;
+    color: blue;
 }
 
 .faq-item .faq-answer p {
@@ -628,7 +628,7 @@ img {
     font-size: var(--fs-body-2);
     font-weight: 400;
     line-height: 1.2;
-    color: var(--color-dark-blue);
+    color: #4A90E2;
 }
 
 .faq-item .faq-answer {
@@ -641,8 +641,9 @@ img {
 
 .faq-item:hover .faq-answer {
     opacity: 1;
-    max-height: 200px;
+    min-height: fit-content;
 }
+
 /* ================================================================================================= */
 
 
